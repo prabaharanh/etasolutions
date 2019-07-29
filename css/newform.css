@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900);
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+.bgbody {
+	background-image:url("/images/image.jpg");
+
+  font-family: Montserrat !important;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.contact
+{
+	background-color: #ffffff;
+    padding: 20px;
+    width: 500px;
+    margin: -175px auto;
+    text-align: center;
+    font-size: 22px;
+    color: #203565;
+    font-weight: 600;
+	
+} 
+
+.header {
+text-align:center;
+	color:#203565;
+	font-size: 24px;
+	font-weight:500;
+	margin:0px 0px 10px 0px;
+}
+form, .content {
+  border: 1px solid #cbcccc;
+	background: #ffffff;
+  padding: 40px;
+  max-width: 500px;
+  margin: 50px auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+.input-group {
+  margin: 10px 0px 10px 0px;
+}
+.input-group label {
+  display: block;
+  text-align: left;
+  margin: 3px;
+}
+input {
+   width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid #cbcccc;
+    margin: 5px 0px;
+}
+
+input:focus {
+  outline: 0;
+  border: 1px solid #203565;
+}
+.btn {
+  border: 0;
+  outline: none;
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: .1em;
+  background: #203565;
+  color: #ffffff;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+	width:100%;
+	margin: 10px 0px 10px 0px;
+	
+}
+.btn:hover, .btn:focus {
+  background: #466aa6;
+	cursor: pointer;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+.error {
+  width: 92%; 
+  margin: 0px auto; 
+  padding: 10px; 
+  border: 1px solid #a94442; 
+  color: #a94442; 
+  background: #f2dede; 
+  border-radius: 5px; 
+  text-align: left;
+}
+.success {
+  color: #3c763d; 
+  background: #dff0d8; 
+  border: 1px solid #3c763d;
+  margin-bottom: 20px;
+}
+a {
+  text-decoration: none;
+  color: #203565;
+  transition: .5s ease;
+	font-weight:700;
+}
+a:hover {
+  color: #466aa6;
+}
+p
+{
+	  text-align: center;
+  color: #333132;
+  font-weight: 400;
+  margin: 10px 0 5px 0px;
+}
+@media screen and (max-width:768px)
+{
+	.bgbody
+	{
+		
+		background-size:cover !important;
+		background-repeat:no-repeat;
+	}
+}
