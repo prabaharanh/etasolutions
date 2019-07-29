@@ -1,6 +1,6 @@
 <?php
-define ("DB_HOST", "etasolutions.scm.database.azure.com"); 
-define ("DB_USER", "azure"); 
+define ("DB_HOST", "localhost"); 
+define ("DB_USER", "azure@localhost"); 
 define ("DB_PASS",""); 
 define ("DB_NAME","dbeta"); 
 
