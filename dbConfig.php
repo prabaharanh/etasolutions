@@ -1,7 +1,7 @@
 <?php
-define ("DB_HOST", "localhost"); 
-define ("DB_USER", "root"); 
-define ("DB_PASS",""); 
+define ("DB_HOST", "etasolutions.mysql.database.azure.com"); 
+define ("DB_USER", "eta"); 
+define ("DB_PASS","Radhah@5969"); 
 define ("DB_NAME","dbeta"); 
 
 $link = mysqli_connect(DB_HOST:50062, DB_USER, DB_PASS) or die("Couldn't make connection.");
