@@ -1,5 +1,5 @@
 <?php
-define ("DB_HOST", "etasolutions.mysql.database.azure.com:3306"); 
+define ("DB_HOST", "etasolutions.mysql.database.azure.com"); 
 define ("DB_USER", "eta@etasolutions"); 
 define ("DB_PASS","Radhah@5969"); 
 define ("DB_NAME","dbeta"); 
