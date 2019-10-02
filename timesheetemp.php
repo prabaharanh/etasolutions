@@ -36,7 +36,7 @@ $pageLimit = ($page * $setLimit) - $setLimit;
                 </button>
               </div>
         
-                <form action="inserttimesheet" method="POST">
+                <form action="timesheetemp.php" method="POST">
         
                     <div class="modal-body">
                         <div class="form-group">
@@ -51,24 +51,24 @@ $pageLimit = ($page * $setLimit) - $setLimit;
         
                         <div class="form-group">
                             <label> Time from  </label>
-                            <input type="time" name="timefrom" class="form-control" placeholder="Time from">
+                            <input type="time" name="timefrom" class="form-control" placeholder="Password">
                         </div>
                                         
                         <div class="form-group">
                             <label> Time to </label>
-                            <input type="time" name="timeto" class="form-control">
+                            <input type="time" name="timeto" class="form-control" placeholder="Re-enter password">
                         </div>
                         <div class="form-group">
                             <label>  </label>
-                            <input type="text" name="comments" class="form-control">
+                            <input type="text" name="comments" class="form-control" placeholder="Comments">
                         </div>
                         <div class="form-group">
                             <label>  </label>
-                            <input type="text" name="activityid" class="form-control">
+                            <input type="text" name="activityid" class="form-control" placeholder="Activity ID">
                         </div>
                         <div class="form-group">
                             <label>  </label>
-                            <input type="date" name="datesubmitted" class="form-control">
+                            <input type="date" name="datesubmitted" class="form-control" placeholder="Date Submitted">
                         </div>
                       
                                   
@@ -96,7 +96,7 @@ $pageLimit = ($page * $setLimit) - $setLimit;
                         </button>
                     </div>
 
-                    <form action="inserttimesheet.php" method="POST">
+                    <form action="employee.php" method="POST">
 
                     <div class="modal-body">
                         <div class="form-group">
@@ -111,24 +111,24 @@ $pageLimit = ($page * $setLimit) - $setLimit;
         
                         <div class="form-group">
                             <label> Time from  </label>
-                            <input type="time" name="timefrom" class="form-control" placeholder="Password">
+                            <input type="time" name="timefrom" class="form-control" placeholder="Time From">
                         </div>
                                         
                         <div class="form-group">
                             <label> Time to </label>
-                            <input type="time" name="timeto" class="form-control" placeholder="Re-enter password">
+                            <input type="time" name="timeto" class="form-control" placeholder="Time to">
+                        </div>
+                 <div class="form-group">
+                            <label>  </label>
+                            <input type="text" name="comments" class="form-control" placeholder="Comments">
                         </div>
                         <div class="form-group">
                             <label>  </label>
-                            <input type="text" name="comments" class="form-control" placeholder="Re-enter password">
+                            <input type="text" name="activityid" class="form-control" placeholder="Activity ID">
                         </div>
                         <div class="form-group">
                             <label>  </label>
-                            <input type="text" name="activityid" class="form-control" placeholder="Re-enter password">
-                        </div>
-                        <div class="form-group">
-                            <label>  </label>
-                            <input type="date" name="datesubmitted" class="form-control" placeholder="Re-enter password">
+                            <input type="date" name="datesubmitted" class="form-control" placeholder="Date Submitted">
                         </div>
                             
                         </div>
@@ -153,7 +153,7 @@ $pageLimit = ($page * $setLimit) - $setLimit;
                         </button>
                     </div>
 
-                    <form action="timesheet.php" method="POST">
+                    <form action="timesheetemp.php" method="POST">
 
                         <div class="modal-body">
 
@@ -204,8 +204,7 @@ $pageLimit = ($page * $setLimit) - $setLimit;
                                     <th scope="col">Start Time</th>
                                     <th scope="col">End Time </th>
                                     <th scope="col">Total Hours </th>
-                                    <th scope="col"> Edit</th>
-                                    <th scope="col"> Delete</th>
+                              
                                
                                 </tr>
                             </thead>
@@ -233,12 +232,7 @@ $weekhour +=$total_hours;
                                             <td><?php echo $total_hours; ?></td>                           
                                          
 
-                                            <td> 
-                                                <button type="button" class="btn btn-success editbtn"> EDIT </button>
-                                            </td> 
-                                            <td>
-                                                <button type="button" class="btn btn-danger deletebtn"> DELETE </button>
-                                            </td>
+                                         
                                         </tr>
                                         
                                         </tbody>
@@ -263,8 +257,7 @@ $weekhour +=$total_hours;
                     </div>
                     </div>
                     </div>
-           
-        
+
 
         
 <script>
